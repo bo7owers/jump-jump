@@ -1,1 +1,106 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5rem;
+}
+
+body #game {
+  width: 500px;
+  height: 200px;
+  border: 1px solid #3333339f;
+}
+
+body #game .character {
+  width: 20px;
+  height: 50px;
+  background-color: #002243;
+  position: relative;
+  top: 148px;
+}
+
+body #game .animation {
+  -webkit-animation: jump 0.3s linear;
+          animation: jump 0.3s linear;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+body #game .obstacle {
+  background-color: #ac1b11;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 129px;
+  left: 500px;
+  -webkit-animation: block 1s infinite linear;
+          animation: block 1s infinite linear;
+}
+
+@-webkit-keyframes block {
+  0% {
+    left: 500px;
+  }
+  100% {
+    left: -30px;
+  }
+}
+
+@keyframes block {
+  0% {
+    left: 500px;
+  }
+  100% {
+    left: -30px;
+  }
+}
+
+body #game p {
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */
