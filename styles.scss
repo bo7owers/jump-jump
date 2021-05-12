@@ -22,8 +22,8 @@ body {
             top: 148px;
         }
 
-        .animation{
-            animation: jump 0.3s linear;
+        .animation {
+            animation: jump 500ms linear;
         }
 
         @keyframes jump {
@@ -40,7 +40,7 @@ body {
             position: relative;
             top: 129px;
             left: 500px;
-            animation: block 1s infinite linear;
+            animation: block 1s linear;
         }
 
         @keyframes block {

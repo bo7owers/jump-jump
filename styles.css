@@ -37,8 +37,8 @@ body #game .character {
 }
 
 body #game .animation {
-  -webkit-animation: jump 0.3s linear;
-          animation: jump 0.3s linear;
+  -webkit-animation: jump 500ms linear;
+          animation: jump 500ms linear;
 }
 
 @-webkit-keyframes jump {
@@ -78,8 +78,8 @@ body #game .obstacle {
   position: relative;
   top: 129px;
   left: 500px;
-  -webkit-animation: block 1s infinite linear;
-          animation: block 1s infinite linear;
+  -webkit-animation: block 1s linear;
+          animation: block 1s linear;
 }
 
 @-webkit-keyframes block {
